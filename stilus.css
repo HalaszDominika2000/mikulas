@@ -1,0 +1,93 @@
+body {
+    background-image: url(kepek/hatter.jpg); /* Háttérkép */
+}
+
+* {
+    box-sizing: border-box; /* Tároló: A CSS box-sizingtulajdonság lehetővé teszi, hogy a kitöltést és a szegélyt belefoglaljuk egy elem teljes szélességébe és magasságába. */
+}
+
+img { /* Kép */
+    width: 100%; /* Szélesség */
+    height: auto; /* Magasság */
+}
+
+main {
+    width: 80%;
+    max-width: 1000px; /* Max szélesség */
+    margin: auto; /* Margónak az állítása */
+    background-color: RGB(255,255,230); /* Háttérszín */
+
+}
+
+header { /* Fejléc */
+    background-image: url("kepek/fejlec.jpg");
+    background-size: cover; /* A kép kitölti a teret, megtartva az arányait */
+    background-position: center; /* A kép középre igazítása */
+    background-repeat: no-repeat; /* A kép ne ismétlődjön */
+    color: red; /* Itt a betű színét állítottam be */
+    height: 550px;
+    text-align: center; /* Ez középre rakja a szöveget */
+    font-family: cursive; /* Betű család (Betű stílusa) */
+    
+}
+
+h1 {
+    margin-top: 60px; /* Top az a felső Bottom az az alsó. 14.	 A fejlécben lévő szövegre állíts be 60px felső belső margót. */
+}
+
+nav { /* Menu */
+    background-color: red;
+    height: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*rácsszerkezet*/
+main {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: 
+    "h h"
+    "n n"
+    "as ar"
+    "f f";
+
+}
+
+header {
+    grid-area: h;
+}
+
+nav {
+    grid-area: n;
+}
+
+aside {
+    grid-area: as;
+}
+
+article {
+    grid-area: ar;
+}
+
+footer {
+    grid-area: f;
+}
+
