@@ -9,6 +9,7 @@ body {
 img { /* Kép */
     width: 100%; /* Szélesség */
     height: auto; /* Magasság */
+    padding: 3px;
 }
 
 main {
