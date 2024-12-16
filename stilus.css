@@ -112,6 +112,7 @@ h2, p {
 
 
 
+
 /*rácsszerkezet*/
 main {
     display: grid; /* Terület neve */
@@ -144,3 +145,26 @@ footer {
     grid-area: f;
 }
 
+@media only screen and (max-width: 700px) { /* reszponzivitás beállítása, törés pontok kisebb képernyő esetén */
+    main {
+        display: grid; /* Terület neve */
+        grid-template-columns: 1fr; /* Terület felosztás oszlop szerint, egy részre oszlik a képernyő*/
+        grid-template-areas: 
+        "h"
+        "n"
+        "ar" 
+        "as"
+        "f"; /* Kinek mekkora területet adunk: Header, nav, footer teljes szélességében használja article, asside nem teljesen */
+        width: 150%;
+        max-width: 1000px; /* Max szélesség */
+        margin: auto; /* Margónak az állítása */
+        background-color: RGB(255,255,230); /* Háttérszín */
+        
+    }
+    aside {
+        display: grid;
+        grid-template-columns: auto auto;  
+    }
+  }
+
+  
