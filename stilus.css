@@ -28,23 +28,66 @@ header { /* Fejléc */
     height: 550px;
     text-align: center; /* Ez középre rakja a szöveget */
     font-family: cursive; /* Betű család (Betű stílusa) */
+    font-weight: bold; /* Sima betű vastag betűvé állítása */
     
 }
 
 h1 {
-    margin-top: 60px; /* Top az a felső Bottom az az alsó. 14.	 A fejlécben lévő szövegre állíts be 60px felső belső margót. */
+    margin-top: 60px; /* Top az a belső-felső Bottom az az alsó. 14.	 A fejlécben lévő szövegre állíts be 60px felső belső margót. */
+    /* margin-bottom: belső-alsó*/
+    /*margin left: belső-bal, margin right: belső jobb */
+    /*border: 1px:vastagság solid:sima vonal grey:szürke*/
 }
 
-nav { /* Menu */
+nav { /* Menu, piros rész egsz navigáció */
     background-color: red;
     height: 50px;
 }
 
+nav ul { /* Ezek navigációs elemek, ebben az esetben a li-ket változtatja*/
+    list-style-type: none; /* Felsorolás jelek eltüntetése */
+    display: grid; 
+    grid-template-columns: 95px 95px 95px; /* Oszlopok szélessége */ /*18.	Igazítsd el a navigációt a mintának megfelelően gridekkel (2 sor)*/
+    gap: 250px; /* Nav elemeknek a távolságát adjuk meg */
+     /* Padding baloldali távolság a szélétől, külső távolság, kívűlről rakja rá */
+    border-top: 1px solid white ; /* Top: felső, bottom: alsó */ 
+    padding-top: 10px;
+    padding-left: 115px;
+    border-bottom: 1px solid white;
+    padding-bottom: 10px;
+    margin: 5px;
+}
 
+nav li:hover { /*csak ha ráviszem az egeret hover */
+    background-color: rgb(10, 253, 10);
+    margin: auto; /* A világító zöld szín középre kerül */
+}
 
+nav li a { /* A nav tegen belül a li tegen belül az a teg */
+    text-decoration: none; /* Minden dekoráció eltűnik a szövegről */
+    color: white;
+    font-weight: bold; /* Ezzel állítom vastag betűre */ /*font-weight: szöveg vastag betűsre állítása */
+}
 
+.bekezdes {
+    text-align: justify; /* Ezzel állítok sorkizártat */ 
+}
 
+article p {
+    font-size: 10px;
+}
 
+article h2 {
+    font-size: 15px;
+    color: #ff1a1a;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+.mik3 {
+    width: 100%;
+    float: right;
+    height: 100%;
+}
 
 
 
@@ -61,18 +104,18 @@ nav { /* Menu */
 
 /*rácsszerkezet*/
 main {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
+    display: grid; /* Terület neve */
+    grid-template-columns: 1fr 2fr; /* Terület felosztás oszlop szerint*/
     grid-template-areas: 
     "h h"
     "n n"
     "as ar"
-    "f f";
+    "f f"; /* Kinek mekkora területet adunk: Header, nav, footer teljes szélességében használja article, asside nem teljesen */
 
 }
 
 header {
-    grid-area: h;
+    grid-area: h; /* Neveket adtunk, elneveztük */
 }
 
 nav {
