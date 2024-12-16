@@ -98,6 +98,14 @@ h2, p {
     padding: 5px;
 }
 
+footer {
+    text-align: center; /*Középre igazítjuk a szöveget */
+}
+
+aside img {
+    border: 1px solid #ff1a1a; /* Kép keret */
+}
+
 
 
 
@@ -116,7 +124,7 @@ h2, p {
 /*rácsszerkezet*/
 main {
     display: grid; /* Terület neve */
-    grid-template-columns: 1fr 2fr; /* Terület felosztás oszlop szerint*/
+    grid-template-columns: 1fr 3fr; /* Terület felosztás oszlop szerint*/
     grid-template-areas: 
     "h h"
     "n n"
