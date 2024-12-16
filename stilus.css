@@ -84,10 +84,20 @@ article h2 {
 }
 
 .mik3 {
-    width: 100%;
-    float: right;
-    height: 100%;
+    width: 30%;
+    float: right; 
+    padding: 5px;
 }
+
+article img {
+    border-radius: 30px;  /* Lekerekített szélű kép stílus */ /* border-radius: Képkeret-kerekítés */
+    
+}
+
+h2, p {
+    padding: 5px;
+}
+
 
 
 
