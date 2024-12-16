@@ -86,7 +86,7 @@ article h2 {
 .mik3 {
     width: 30%;
     float: right; 
-    padding: 5px;
+    box-shadow:  10px 10px rgba(119, 136, 153, 0.507);
 }
 
 article img {
